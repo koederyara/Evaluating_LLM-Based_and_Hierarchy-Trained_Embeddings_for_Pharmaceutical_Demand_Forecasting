@@ -1,0 +1,8 @@
+metric,value
+seasonal_index_Q1,1.0077879743768845
+seasonal_index_Q2,0.9839927496255735
+seasonal_index_Q3,0.9858659222668197
+seasonal_index_Q4,1.0223533537307223
+median_series_acf_lag1,0.8066262304682842
+median_series_acf_lag4,0.5583641239422932
+series_acf_lag4_gt_0p2_pct,0.7315276548770779

@@ -1,0 +1,12 @@
+metric,value
+mean_longest_blank_run,17.757488228661398
+series_with_no_blanks,92097.0
+series_longest_run_ge_4,228305.0
+series_longest_run_ge_8,210441.0
+median_leading_blank_run,0.0
+p50_longest_blank_run,17.0
+p75_longest_blank_run,31.0
+p90_longest_blank_run,41.0
+p95_longest_blank_run,44.0
+p99_longest_blank_run,47.0
+p100_longest_blank_run,47.0

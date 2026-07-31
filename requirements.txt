@@ -1,0 +1,29 @@
+# Direct dependencies of the thesis pipeline, pinned to the versions of the submitted run.
+# Python 3.14.2. For the full transitive environment see requirements-lock.txt.
+#
+#   python -m venv .venv && .venv/Scripts/pip install -r requirements.txt
+
+# --- Core data handling ---
+pandas==3.0.2
+numpy==2.4.4
+scipy==1.17.1              # Spearman correlations in the intrinsic metrics
+openpyxl==3.1.5            # pandas.read_excel backend for the IQVIA .xlsx export
+
+# --- Ontology graph ---
+networkx==3.6.1            # ATC tree, transitive closure, tree distances
+
+# --- Models ---
+scikit-learn==1.8.0        # PCA, Elastic-Net probe, Ridge, StratifiedKFold
+torch==2.11.0              # CPU build used for the submitted run (2.11.0+cpu)
+transformers==5.5.4        # SapBERT tokenizer and encoder
+geoopt==0.5.1              # Riemannian SGD for the Lorentz model
+lightgbm==4.6.0            # gradient-boosted forecasting model
+
+# --- OpenAI embedding backend ---
+openai==2.32.0
+python-dotenv==1.2.2       # loads OPENAI_API_KEY from .env
+
+# --- Figures and progress output ---
+matplotlib==3.10.8
+plotly==6.7.0              # interactive 3D Lorentz figures
+tqdm==4.67.3

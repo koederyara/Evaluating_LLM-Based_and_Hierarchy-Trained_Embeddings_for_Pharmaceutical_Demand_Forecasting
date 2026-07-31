@@ -1,0 +1,76 @@
+.venv/
+venv/
+env/
+ENV/
+
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+
+build/
+dist/
+*.egg-info/
+
+.idea/
+.DS_Store
+.env
+.env.local
+.env.*.local
+
+.DS_Store
+Thumbs.db
+
+output/
+outputs/
+logs/
+exports/
+plots/
+
+# --- data/ -----------------------------------------------------------------
+# Allowlist, deliberately: everything under data/ is excluded and only the
+# explicitly public paths are re-included. Anything derived from the licensed
+# IQVIA export or the Teva mapping files therefore stays out by default --
+# including data/raw/forecasting/ and the whole data/prepared_data/sales/ tree,
+# which holds the raw sales values in reshaped form.
+data/*
+
+!data/raw/
+data/raw/*
+!data/raw/ATC.csv
+
+!data/prepared_data/
+data/prepared_data/*
+!data/prepared_data/data_atc.csv
+!data/prepared_data/data_atc_links.csv
+
+# Of the sales tree only the descriptive exploration tables are shipped; the
+# preparation, mapping, modeling and forecasting outputs all carry the raw sales
+# values and stay out.
+!data/prepared_data/sales/
+data/prepared_data/sales/*
+!data/prepared_data/sales/exploration/
+
+# ... and within exploration, only what carries no product, brand or series
+# identity. These files name individual products/brands together with their
+# volumes, i.e. competitor-readable IQVIA market data, and are excluded:
+data/prepared_data/sales/exploration/dataset/sales_dosage_mix.csv
+data/prepared_data/sales/exploration/dataset/sales_by_product.csv
+data/prepared_data/sales/exploration/dataset/sales_by_brand.csv
+data/prepared_data/sales/exploration/dataset/top_product_dosage_brand_market_combinations.csv
+data/prepared_data/sales/exploration/dataset/dimension_profile.csv
+data/prepared_data/sales/exploration/series/brand_blank_alignment_per_group.csv
+data/prepared_data/sales/exploration/subsets/subset_series_blanks_brand.csv
+data/prepared_data/sales/exploration/subsets/subset_series_blanks_market.csv
+data/prepared_data/sales/exploration/subsets/subset_summary_brand.csv
+# documents the raw column layout using example product and brand names
+data/prepared_data/sales/exploration/dataset/raw_column_profile.csv
+
+# Derived from the public ATC ontology only; shipped so the intrinsic
+# evaluation (stage 3) runs without an API key or 8-9 h of Lorentz training.
+!data/embeddings/
+

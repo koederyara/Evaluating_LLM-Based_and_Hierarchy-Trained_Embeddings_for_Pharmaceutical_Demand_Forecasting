@@ -1,0 +1,11 @@
+metric,value
+series,337897.0
+quarters,48.0
+total_cells,16219056.0
+blank_cells,6926644.0
+blank_pct,0.4270682584732428
+recorded_zero_cells,487.0
+positive_cells,9257271.0
+negative_cells,34654.0
+fully_empty_series,0.0
+series_first_active_after_start,155174.0

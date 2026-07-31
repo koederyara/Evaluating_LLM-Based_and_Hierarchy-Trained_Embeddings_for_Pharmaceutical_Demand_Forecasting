@@ -1,0 +1,8 @@
+metric,value
+negative_cells,34654.0
+negative_cells_pct,0.002136622501334233
+series_with_any_negative,15159.0
+negatives_following_positive_quarter,16016.0
+negatives_following_positive_pct,0.46216886939458646
+min_negative_value,-43715700.0
+median_negative_value,-240.0

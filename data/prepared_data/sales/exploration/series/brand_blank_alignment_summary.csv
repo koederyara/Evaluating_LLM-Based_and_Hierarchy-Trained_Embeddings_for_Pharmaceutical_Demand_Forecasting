@@ -1,0 +1,8 @@
+metric,value
+product_market_groups,35476
+single_component_groups,7291
+multi_component_groups,28185
+merged_blank_quarters_total,33374
+merged_blank_from_single_component,14102
+merged_blank_from_multi_component,19272
+resolved_by_merge_partial_blank_quarters,1106225

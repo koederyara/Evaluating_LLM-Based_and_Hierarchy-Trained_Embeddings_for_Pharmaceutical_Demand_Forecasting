@@ -1,0 +1,2 @@
+config_key,norm_rank_spearman_rho,norm_rank_p_value,hdc_score,hdc_n_pairs,note
+lorentz,0.09148330459049551,2.696551982882439e-14,0.2914426848757809,6883,Lorentz-internal; structurally biased toward the Lorentz model by design.

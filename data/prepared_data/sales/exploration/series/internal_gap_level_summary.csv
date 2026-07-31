@@ -1,0 +1,8 @@
+metric,value
+internal_gaps_total,192261.0
+gaps_both_sides_positive,184740.0
+gaps_post_near_pre_0p5_2x,72950.0
+gaps_post_near_pre_pct,0.39487928981270976
+median_pre_value,331.0
+median_post_value,330.0
+median_post_over_pre_ratio,1.0
